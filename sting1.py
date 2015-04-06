@@ -25,13 +25,12 @@
 # and donuts(23) returns 'Number of donuts: many'
 def donuts(count):
   if count < 10:
-      print 'Number of donuts :' , str(count)
+      output = 'Number of donuts :' , str(count)
   else:
-      print 'Number of donuts : many ' 
+      output = 'Number of donuts : many ' 
     
-  return
+  return output
 
-donuts(20)
 
 
 # B. both_ends
@@ -41,10 +40,10 @@ donuts(20)
 # is less than 2, return instead the empty string.
 def both_ends(s):
   if len(s) < 2:
-      print " "
+      output = " "
   else:
-      print s[:2] + s[-2:]
-  return
+      output= s[:2] + s[-2:]
+  return output
 
 
 # C. fix_start
@@ -60,7 +59,7 @@ def fix_start(s):
   a =s [0]
   b =s [1:]
   c =b.replace(a,'*')
-  print a + c
+  return a + c
   return
 
 
@@ -75,7 +74,7 @@ def mix_up(a, b):
   c=a[0:2]+b[2:]
   d=b[0:2]+a[2:]
   print d, c
-  return
+  return output
 
 
 # Provided simple test() function used in main() to print
